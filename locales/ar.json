@@ -1,0 +1,604 @@
+{
+  "recurrence": {
+    "freq": "التكرار",
+    "freqs": {
+      "daily": "يومي",
+      "weekly": "أسبوعي",
+      "monthly": "شهري",
+      "quarterly": "ربع سنوي",
+      "yearly": "سنوي"
+    },
+    "interval": "كل N {{unit}}",
+    "units": {
+      "daily": "يوم",
+      "weekly": "أسبوع",
+      "monthly": "شهر",
+      "quarterly": "ربع سنة",
+      "yearly": "سنة"
+    },
+    "unitsPlural": {
+      "daily": "أيام",
+      "weekly": "أسابيع",
+      "monthly": "أشهر",
+      "quarterly": "أرباع سنة",
+      "yearly": "سنوات"
+    },
+    "every": {
+      "daily": "كل يوم",
+      "weekly": "كل أسبوع",
+      "monthly": "كل شهر",
+      "quarterly": "كل ربع سنة",
+      "yearly": "كل سنة"
+    },
+    "everyN": "كل {{n}} {{unit}}",
+    "onDays": "في الأيام",
+    "weekdays": {
+      "0": "الأحد",
+      "1": "الاثنين",
+      "2": "الثلاثاء",
+      "3": "الأربعاء",
+      "4": "الخميس",
+      "5": "الجمعة",
+      "6": "السبت"
+    },
+    "month": "الشهر",
+    "months": {
+      "1": "يناير",
+      "2": "فبراير",
+      "3": "مارس",
+      "4": "أبريل",
+      "5": "مايو",
+      "6": "يونيو",
+      "7": "يوليو",
+      "8": "أغسطس",
+      "9": "سبتمبر",
+      "10": "أكتوبر",
+      "11": "نوفمبر",
+      "12": "ديسمبر"
+    },
+    "dayOfMonth": "يوم الشهر",
+    "day": "اليوم {{n}}",
+    "until": "ينتهي في (اختياري)",
+    "count": "الحد الأقصى للتكرارات",
+    "unlimited": "غير محدود",
+    "summary": {
+      "daily": "كل {{interval}} يوم",
+      "weekly": "كل {{interval}} أسبوع",
+      "monthly": "اليوم {{day}} من كل {{interval}} شهر",
+      "quarterly": "اليوم {{day}} من كل ربع سنة",
+      "yearly": "سنويًا في {{day}}/{{month}}"
+    }
+  },
+  "auth": {
+    "email": "البريد الإلكتروني",
+    "hidePassword": "إخفاء كلمة المرور",
+    "invalidCredentials": "البريد الإلكتروني أو كلمة المرور غير صحيحة.",
+    "password": "كلمة المرور",
+    "showPassword": "إظهار كلمة المرور",
+    "signIn": "تسجيل الدخول",
+    "signInSubtitle": "سجّل الدخول إلى مساحة عمل {{app}}",
+    "signOut": "تسجيل الخروج",
+    "signingIn": "جارٍ تسجيل الدخول…",
+    "welcomeBack": "مرحباً بعودتك",
+    "useDemo": "استخدم الحساب التجريبي"
+  },
+  "availability": {
+    "copyToAll": "نسخ لكل الأيام",
+    "from": "من",
+    "invalid": "يجب أن يكون وقت الانتهاء بعد وقت البدء.",
+    "off": "عطلة",
+    "to": "إلى"
+  },
+  "clients": {
+    "phone": "الهاتف"
+  },
+  "columns": {
+    "all": "الكل",
+    "hint": "اختر الأعمدة التي تريد عرضها واسحبها لإعادة ترتيبها. يُحفظ الترتيب في حسابك ليظهر على كل أجهزتك.",
+    "moveDown": "نقل لأسفل",
+    "moveUp": "نقل لأعلى",
+    "none": "لا شيء",
+    "reset": "إعادة الافتراضي",
+    "selectedCount": "{{count}} من {{total}} معروضة",
+    "title": "الأعمدة"
+  },
+  "common": {
+    "accountMenu": "قائمة الحساب",
+    "actions": "إجراءات",
+    "addCustom": "إضافة \"{{value}}\"",
+    "all": "الكل",
+    "appName": "{{app}}",
+    "attention": {
+      "allClear": "كل شيء مكتمل — لا شيء يحتاج إلى متابعة",
+      "title": "يحتاج إلى متابعة"
+    },
+    "cancel": "إلغاء",
+    "clear": "مسح",
+    "close": "إغلاق",
+    "create": "إنشاء",
+    "delete": "حذف",
+    "deleted": "تم الحذف",
+    "done": "تم",
+    "edit": "تعديل",
+    "featureDisabled": "هذه الميزة غير متضمنة في باقتك الحالية.",
+    "language": "اللغة",
+    "noResults": "لا توجد نتائج",
+    "remove": "إزالة",
+    "save": "حفظ",
+    "saved": "تم الحفظ",
+    "search": "بحث",
+    "searchOrType": "ابحث أو اكتب…",
+    "select": "اختر",
+    "selectAll": "تحديد الكل",
+    "selectedCount": "تم تحديد {{count}}",
+    "soon": "قريباً",
+    "sortBy": "ترتيب حسب",
+    "status": "الحالة",
+    "toggleTheme": "تبديل المظهر",
+    "typeToAdd": "اكتب في الأعلى لإضافة عنصر جديد",
+    "typeToSearch": "اكتب للبحث…",
+    "appTagline": "منصة الأعمال",
+    "previousPage": "الصفحة السابقة",
+    "nextPage": "الصفحة التالية",
+    "comingSoon": "قريباً",
+    "comingSoonHint": "هذه الوحدة ضمن خطة التطوير. الصفحات المؤقتة تستخدم نفس الترويسة وحالة الفراغ المستخدمة في بقية النظام.",
+    "noData": "لا توجد بيانات بعد",
+    "noMatches": "لا توجد نتائج",
+    "noMatchesHint": "جرّب بحثاً مختلفاً أو امسح عوامل التصفية.",
+    "clearSelection": "إلغاء التحديد"
+  },
+  "dashboard": {
+    "attention": {
+      "clearHint": "لا يوجد ما ينتظرك الآن.",
+      "clearTitle": "لا شيء متأخر",
+      "hint": "الأحمر بانتظارك أنت، والكهرماني قائمة يمكنك اعتمادها.",
+      "queue": "للاعتماد",
+      "title": "بانتظار اهتمامك",
+      "yours": "لك",
+      "rows": {
+        "followUp": "عملاء محتملون بحاجة لمتابعة",
+        "overdue": "أرصدة متأخرة",
+        "approve": "مشاريع بانتظار الاعتماد"
+      }
+    },
+    "greeting": {
+      "morning": "صباح الخير",
+      "afternoon": "طاب يومك",
+      "evening": "مساء الخير"
+    },
+    "hero": {
+      "trend": "+{{pct}}٪ هذا الشهر",
+      "activeCustomers": "العملاء النشطون",
+      "openProjects": "المشاريع المفتوحة",
+      "revenue": "الإيرادات",
+      "newLeads": "عملاء محتملون جدد"
+    },
+    "blocks": {
+      "heading": "أقسامك",
+      "customersHint": "الحسابات والعملاء المحتملون",
+      "projectsHint": "مسار التنفيذ",
+      "finance": "المالية",
+      "financeHint": "الأرصدة والتحصيل",
+      "reportsHint": "المؤشرات والتصدير",
+      "overdue": "متأخر",
+      "progress": "{{done}} / {{total}} مكتمل",
+      "balances": "إجمالي الأرصدة",
+      "owed": "مستحق لنا"
+    },
+    "upcoming": {
+      "title": "المواعيد القادمة",
+      "all": "كل المشاريع"
+    },
+    "quickActions": "إجراءات سريعة"
+  },
+  "filters": {
+    "activeCount": "{{count}} مفعّلة",
+    "clearAll": "مسح الكل",
+    "more": "خيارات إضافية",
+    "presets": {
+      "changeFirst": "غيّر فلتراً أولاً لحفظ إعداد.",
+      "default": "افتراضي",
+      "empty": "لا توجد إعدادات محفوظة بعد",
+      "hint": "احفظ الفلاتر الحالية لإعادة استخدامها لاحقاً. يُطبَّق الإعداد الافتراضي عند فتح هذه الصفحة.",
+      "makeDefault": "تطبيقه افتراضياً عند فتح هذه الصفحة",
+      "name": "اسم الإعداد",
+      "namePlaceholder": "مثال: استوديوهات شاغرة",
+      "rename": "إعادة تسمية",
+      "saveCurrent": "حفظ الفلاتر الحالية كإعداد",
+      "saved": "تم حفظ الإعداد",
+      "setDefault": "تعيين كافتراضي",
+      "title": "الإعدادات المحفوظة",
+      "unsetDefault": "إزالة الافتراضي",
+      "updateWithCurrent": "تحديث الإعداد بالفلاتر الحالية"
+    },
+    "reset": "إعادة تعيين الفلاتر",
+    "showResults": "عرض النتائج",
+    "title": "الفلاتر"
+  },
+  "locationSets": {
+    "import": {
+      "chooseFile": "اختر ملفاً",
+      "fileHint": "PDF أو Word أو صورة حتى 20 ميغابايت",
+      "invalidFile": "نوع الملف غير مدعوم.",
+      "tooLarge": "حجم الملف كبير جداً."
+    }
+  },
+  "nav": {
+    "collapseSidebar": "طي القائمة",
+    "darkMode": "الوضع الداكن",
+    "dashboard": "لوحة التحكم",
+    "expandSidebar": "توسيع القائمة",
+    "lightMode": "الوضع الفاتح",
+    "more": "المزيد",
+    "openMenu": "فتح القائمة",
+    "reports": "التقارير",
+    "sections": {
+      "finance": "المالية",
+      "overview": "نظرة عامة",
+      "workspace": "مساحة العمل",
+      "system": "نظام التصميم"
+    },
+    "settings": "الإعدادات",
+    "customers": "العملاء",
+    "projects": "المشاريع",
+    "invoices": "الفواتير",
+    "components": "مكونات الواجهة",
+    "icons": "الأيقونات"
+  },
+  "notifications": {
+    "empty": "لا توجد إشعارات جديدة.",
+    "markAllRead": "تحديد الكل كمقروء",
+    "title": "الإشعارات",
+    "sample": {
+      "customerTitle": "تمت إضافة عميل جديد",
+      "customerBody": "أضاف عمر سارة البلوشية إلى العملاء.",
+      "paymentTitle": "تم استلام دفعة",
+      "paymentBody": "تم استلام 1,250.000 ر.ع للفاتورة INV-1042.",
+      "projectTitle": "نُقل المشروع إلى المراجعة",
+      "projectBody": "مشروع تجهيز مستودع صحار جاهز لمراجعتك."
+    }
+  },
+  "phone": {
+    "searchCountry": "ابحث عن دولة",
+    "selectCountry": "اختر الدولة"
+  },
+  "settings": {
+    "branding": {
+      "logo": "الشعار",
+      "upload": "رفع الشعار",
+      "title": "الهوية البصرية",
+      "hint": "الشعار واللون المستخدمان في النظام.",
+      "color": "لون الهوية",
+      "preview": "معاينة مباشرة"
+    },
+    "pdfSign": {
+      "clear": "مسح",
+      "drawHint": "وقّع داخل المربع باستخدام الفأرة أو إصبعك.",
+      "drawTitle": "رسم التوقيع",
+      "inkColor": "لون الحبر",
+      "save": "حفظ التوقيع"
+    },
+    "subtitle": "الملف الشخصي والمؤسسة والهوية والإشعارات",
+    "title": "الإعدادات",
+    "profile": {
+      "title": "ملفك الشخصي",
+      "hint": "كيف يراك فريقك.",
+      "name": "الاسم الكامل",
+      "bio": "نبذة عنك",
+      "bioHint": "سطر قصير عن دورك"
+    },
+    "org": {
+      "title": "المؤسسة",
+      "hint": "تُستخدم في المستندات والفواتير ورسائل البريد.",
+      "name": "اسم الشركة",
+      "country": "الدولة",
+      "currency": "العملة",
+      "timezone": "المنطقة الزمنية"
+    },
+    "notify": {
+      "title": "الإشعارات",
+      "hint": "اختر طريقة تواصلنا معك.",
+      "email": "البريد الإلكتروني",
+      "emailHint": "تحديثات عن العملاء والمشاريع.",
+      "whatsapp": "واتساب",
+      "whatsappHint": "التنبيهات العاجلة فقط.",
+      "digest": "الملخص الأسبوعي",
+      "digestHint": "ملخص كل صباح أحد."
+    }
+  },
+  "timezones": {
+    "localNow": "الوقت المحلي هناك الآن: {{time}}",
+    "placeholder": "اختر المنطقة الزمنية",
+    "sameAsSchool": "نفس توقيت المؤسسة — {{zone}}",
+    "search": "ابحث عن مدينة أو دولة أو فرق التوقيت"
+  },
+  "upload": {
+    "dropHint": "أو انقر للاختيار",
+    "dropTitle": "أفلت الملفات هنا",
+    "errorForbidden": "ليست لديك صلاحية رفع هذا النوع من الملفات.",
+    "errorGeneric": "فشل الرفع.",
+    "errorLimit": "تم الوصول إلى حد التخزين.",
+    "errorMalicious": "تم رفض الملف من قبل فاحص الفيروسات.",
+    "errorScanUnavailable": "فاحص الفيروسات غير متاح. حاول لاحقاً.",
+    "errorTooLarge": "حجم الملف كبير جداً.",
+    "errorType": "نوع الملف هذا غير مسموح به هنا.",
+    "filesCount": "{{count}} ملفات",
+    "remove": "إزالة",
+    "upload": "رفع"
+  },
+  "viewer": {
+    "close": "إغلاق",
+    "download": "تحميل",
+    "next": "التالي",
+    "openTab": "فتح في تبويب جديد",
+    "previous": "السابق",
+    "zoomIn": "تكبير",
+    "zoomOut": "تصغير"
+  },
+  "roles": {
+    "admin": "مدير النظام",
+    "member": "عضو الفريق"
+  },
+  "customers": {
+    "title": "العملاء",
+    "subtitle": "{{count}} عميل",
+    "add": "إضافة عميل",
+    "edit": "تعديل العميل",
+    "search": "ابحث بالاسم أو البريد أو الهاتف",
+    "allStatuses": "كل الحالات",
+    "allCities": "كل المدن",
+    "vip": "مميز",
+    "vipHint": "العملاء المميزون يحصلون على دعم ذي أولوية ويظهر بجانبهم تاج.",
+    "empty": "لا يوجد عملاء بعد",
+    "emptyHint": "أضف أول عميل للبدء.",
+    "deleteTitle": "حذف العميل؟",
+    "deleteHint": "سيتم حذف {{name}}. لا يمكن التراجع عن ذلك.",
+    "bulkDeleted_zero": "لم يُحذف أي عميل",
+    "bulkDeleted_one": "تم حذف عميل واحد",
+    "bulkDeleted_two": "تم حذف عميلين",
+    "bulkDeleted_few": "تم حذف {{count}} عملاء",
+    "bulkDeleted_many": "تم حذف {{count}} عميلاً",
+    "bulkDeleted_other": "تم حذف {{count}} عميل",
+    "formInvalid": "أدخل اسماً (حرفان على الأقل) وبريداً إلكترونياً صحيحاً.",
+    "status": {
+      "active": "نشط",
+      "lead": "محتمل",
+      "inactive": "غير نشط"
+    },
+    "sort": {
+      "name": "الاسم",
+      "newest": "الأحدث",
+      "balance": "الرصيد"
+    },
+    "fields": {
+      "name": "الاسم",
+      "contact": "التواصل",
+      "city": "المدينة",
+      "joined": "تاريخ الانضمام",
+      "balance": "الرصيد",
+      "nameEn": "الاسم (بالإنجليزية)",
+      "nameAr": "الاسم (بالعربية)",
+      "email": "البريد الإلكتروني",
+      "phone": "الهاتف"
+    },
+    "cities": {
+      "muscat": "مسقط",
+      "sohar": "صحار",
+      "nizwa": "نزوى",
+      "salalah": "صلالة",
+      "sur": "صور"
+    }
+  },
+  "projects": {
+    "title": "المشاريع",
+    "subtitle": "تابع التنفيذ من التخطيط حتى التسليم",
+    "add": "مشروع جديد",
+    "created": "تم إنشاء المشروع",
+    "emptyStage": "لا شيء هنا بعد",
+    "formInvalid": "اسم المشروع والعميل وتاريخ الاستحقاق مطلوبة.",
+    "tabs": {
+      "board": "اللوحة",
+      "list": "القائمة",
+      "activity": "النشاط"
+    },
+    "stage": {
+      "planning": "تخطيط",
+      "active": "قيد التنفيذ",
+      "review": "قيد المراجعة",
+      "done": "مكتمل"
+    },
+    "fields": {
+      "name": "اسم المشروع",
+      "customer": "العميل",
+      "progress": "الإنجاز",
+      "due": "تاريخ الاستحقاق",
+      "budget": "الميزانية",
+      "stage": "المرحلة",
+      "tags": "الوسوم",
+      "color": "اللون"
+    },
+    "form": {
+      "basics": "الأساسيات",
+      "basicsHint": "لمن المشروع ومتى موعد تسليمه.",
+      "organise": "التنظيم"
+    },
+    "feed": {
+      "actor": "عمر",
+      "completed": "أكمل",
+      "commented": "علّق على",
+      "uploaded": "رفع مخططات إلى",
+      "moved": "طلب مراجعة"
+    }
+  },
+  "icons": {
+    "title": "الأيقونات",
+    "subtitle": "{{count}} أيقونة من lucide-react · اضغط على أي أيقونة لنسخ الكود",
+    "search": "ابحث بالإنجليزية (مثل user أو file أو chart)",
+    "results_zero": "لا توجد أيقونات",
+    "results_one": "أيقونة واحدة",
+    "results_two": "أيقونتان",
+    "results_few": "{{count}} أيقونات",
+    "results_many": "{{count}} أيقونة",
+    "results_other": "{{count}} أيقونة",
+    "showMore": "عرض المزيد (متبقٍ {{count}})",
+    "copied": "تم نسخ <{{name}} />",
+    "noMatchesHint": "أسماء lucide بالإنجليزية، جرّب كلمة أبسط (مثل calendar أو wallet).",
+    "usage": "المقاسات",
+    "rtl": "من اليمين لليسار",
+    "rtlHint": "الأيقونات الاتجاهية (الأسهم) تأخذ rtl:rotate-180 لتشير للاتجاه الصحيح في العربية."
+  },
+  "showcase": {
+    "title": "مكونات الواجهة",
+    "subtitle": "وحدات البناء المشتركة بشكل حي. غيّر المظهر أو اللغة لرؤية كل الحالات.",
+    "toc": "في هذه الصفحة",
+    "docsHint": "قواعد استخدام هذه المكونات موجودة في ملف DESIGN_SYSTEM.md في جذر المشروع.",
+    "showCode": "الكود",
+    "hideCode": "إخفاء الكود",
+    "copy": "نسخ الكود",
+    "copied": "تم النسخ",
+    "sections": {
+      "foundations": "الأساسيات",
+      "actions": "الإجراءات والعرض",
+      "forms": "عناصر النماذج",
+      "data": "البيانات والقوائم",
+      "overlays": "النوافذ والتنبيهات",
+      "layout": "أنماط الصفحات"
+    },
+    "hints": {
+      "foundations": "رموز الألوان والدرجات وأحجام الخط والحواف والظلال.",
+      "actions": "الأزرار والشارات والصور الرمزية والقوائم.",
+      "forms": "كل مكونات الإدخال. القيم نصوص بسيطة والعناوين دائماً من t().",
+      "data": "جداول تتحول إلى بطاقات على الشاشات الضيقة، والتصفية والمبالغ والترقيم.",
+      "overlays": "النوافذ المنبثقة والتأكيد والأدراج والإشعارات والتنبيهات وحالات التحميل.",
+      "layout": "ترويسة الصفحة وحالة الفراغ وأقسام النماذج ووحدات لوحة التحكم."
+    },
+    "ex": {
+      "brand": "درجات الهوية",
+      "primaryScale": "الأساسي · sky-* (فيروزي)",
+      "secondaryScale": "الثانوي · violet-* (ذهبي)",
+      "surfaces": "رموز الأسطح",
+      "status": "ألوان الحالات",
+      "tints": "خلفيات الأيقونات (TINT)",
+      "type": "أحجام الخط",
+      "shape": "الحواف والظلال",
+      "buttons": "Button",
+      "linkButton": "LinkButton",
+      "toggleGroup": "ToggleButtonGroup",
+      "chips": "Chip",
+      "badges": "Badge · Kbd",
+      "avatars": "UserAvatar",
+      "menus": "Tooltip · Dropdown · Popover",
+      "textInputs": "حقول النص",
+      "selects": "القوائم والمنتقيات",
+      "dates": "التواريخ والأوقات",
+      "toggles": "Switch · Checkbox · Radio · Slider",
+      "colors": "منتقي الألوان",
+      "recurrence": "RecurrenceField",
+      "availability": "AvailabilityEditor",
+      "files": "FileUpload · FileCard",
+      "aiFile": "AiFilePicker",
+      "code": "CodeEditor",
+      "dataTable": "DataTable",
+      "recordCards": "RecordCard",
+      "filters": "التصفية",
+      "attention": "NeedsAttentionBar · GapBadges",
+      "money": "Money · CurrencySymbol",
+      "pagination": "ListPagination",
+      "dialogs": "النوافذ",
+      "toasts": "الإشعارات المنبثقة",
+      "alerts": "Alert",
+      "loading": "حالات التحميل",
+      "dashboardBlocks": "وحدات لوحة التحكم"
+    },
+    "type": {
+      "h1": "عنوان الصفحة",
+      "h2": "عنوان القسم",
+      "h3": "عنوان البطاقة",
+      "body": "نص أساسي",
+      "muted": "تلميح / نص ثانوي",
+      "overline": "تسمية علوية"
+    },
+    "gaps": {
+      "noPhone": "بدون هاتف",
+      "noEmail": "بدون بريد",
+      "overdue": "متأخر"
+    },
+    "alerts": {
+      "defaultTitle": "للعلم",
+      "defaultBody": "معلومة عامة عن هذه الصفحة.",
+      "accentTitle": "ميزة جديدة",
+      "accentBody": "أصبح بإمكانك اختيار لون لكل مشروع.",
+      "successTitle": "تم بنجاح",
+      "successBody": "تم حفظ التغييرات.",
+      "warningTitle": "تحقق من هذا",
+      "warningBody": "عميلان بدون رقم هاتف.",
+      "dangerTitle": "حدث خطأ",
+      "dangerBody": "تعذّر الاتصال بالخادم. حاول مرة أخرى."
+    },
+    "demo": {
+      "small": "صغير",
+      "medium": "متوسط",
+      "large": "كبير",
+      "create": "إنشاء",
+      "continue": "متابعة",
+      "share": "مشاركة",
+      "clickToLoad": "اضغط للتحميل",
+      "disabled": "معطّل",
+      "alignStart": "محاذاة للبداية",
+      "alignCenter": "توسيط",
+      "alignEnd": "محاذاة للنهاية",
+      "hoverMe": "مرّر المؤشر هنا",
+      "tooltip": "التلميحات تعرّف الأزرار التي تحوي أيقونة فقط",
+      "duplicate": "تكرار",
+      "download": "تنزيل",
+      "popover": "نافذة صغيرة",
+      "popoverTitle": "النوافذ الصغيرة للوحات المختصرة",
+      "popoverBody": "استخدمها للتفاصيل السريعة أو نموذج قصير. ما هو أكبر مكانه نافذة Modal.",
+      "fullName": "الاسم الكامل",
+      "fullNameHint": "مثال: سارة البلوشية",
+      "fieldDescription": "الوصف يظهر أسفل الحقل.",
+      "invalidEmail": "أدخل بريداً إلكترونياً صحيحاً.",
+      "quantity": "الكمية",
+      "notes": "ملاحظات",
+      "notesHint": "أي شيء يجب أن يعرفه الفريق",
+      "otp": "رمز التحقق",
+      "office": "مكتب",
+      "retail": "تجزئة",
+      "business": "أعمال",
+      "pickCustomer": "اختر عميلاً",
+      "switchLabel": "تنبيهات البريد",
+      "switchHint": "ملخص يومي للنشاط الجديد.",
+      "agree": "أوافق على الشروط",
+      "volume": "مستوى الصوت",
+      "plan": "دورة الفوترة",
+      "monthly": "شهري",
+      "quarterly": "ربع سنوي",
+      "yearly": "سنوي",
+      "upload": "رفع ملفات",
+      "tableNote": "صغّر النافذة: تحت نقطة التحول تظهر نفس الصفوف كبطاقات.",
+      "fullExample": "شاهد صفحة القائمة الكاملة",
+      "allCustomers": "كل العملاء",
+      "modalTitle": "تعديل التفاصيل",
+      "modalBody": "لا تُغلق النوافذ بالنقر خارجها حتى لا تضيع البيانات غير المحفوظة. أغلقها بزر الإلغاء أو الحفظ أو X.",
+      "confirmBody": "سيتم حذف السجل نهائياً. رسائل التأكيد تذكر دائماً ما سيُفقد.",
+      "drawerTitle": "التفاصيل",
+      "drawerBody": "الأدراج تنزلق من طرف النهاية (اليسار في العربية) لعرض التفاصيل مع بقاء الصفحة ظاهرة.",
+      "signature": "التوقيع",
+      "toastError": "تعذّر الحفظ. حاول مرة أخرى.",
+      "toastWarning": "تم الحفظ، لكن تم تخطي صفين.",
+      "toastInfo": "بدأ التصدير",
+      "toastDescription": "سنخبرك عندما يصبح جاهزاً.",
+      "cardHint": "Card هي الحاوية السطحية البسيطة.",
+      "introHint": "FormIntro يبدأ النموذج بصورة أو صورة رمزية.",
+      "registration": "رقم السجل التجاري",
+      "groupLabel": "عنوان مجموعة",
+      "field": "حقل",
+      "footerError": "FormFooter يعرض سطر الخطأ فوق الأزرار.",
+      "heroTitle": "واجهة بارزة واحدة لكل صفحة رئيسية",
+      "loadingState": "stats={undefined} يعرض هيكل التحميل",
+      "eventTitle": "مراجعة التصميم",
+      "eventSub": "تجديد مكتب مسقط",
+      "eventTitle2": "التسليم"
+    }
+  }
+}

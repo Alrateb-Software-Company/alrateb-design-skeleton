@@ -1,0 +1,198 @@
+@import "tailwindcss";
+@import "@heroui/styles";
+
+/* The app's theme toggle owns dark mode (the .dark class), so `dark:` must not fall back to the OS
+   preference — otherwise light mode on a dark-OS device picks up dark-only text colours. */
+@custom-variant dark (&:is(.dark, .dark *, [data-theme="dark"], [data-theme="dark"] *));
+
+/* Phones held horizontally: little vertical room, so chrome must shrink. */
+@custom-variant short (@media (max-height: 500px) and (orientation: landscape));
+
+@font-face {
+  font-family: "Boutros Jazirah Text";
+  src: url("/fonts/boutrosjazirahtextlight.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+  /* Renders visually smaller than Latin fonts at the same px size. */
+  size-adjust: 135%;
+}
+
+/* ===== Design tokens (soft surfaces, generous radius) — see DESIGN_SYSTEM.md ===== */
+:root {
+  --app-bg: #f5f5f7;
+  --app-surface: #ffffff;
+  --app-border: rgba(0, 0, 0, 0.06);
+  /* Brand accent: drives every HeroUI component (buttons, focus rings, switches…). */
+  --accent: #0f766e;
+  /* `sky-*` is our PRIMARY brand scale (teal) and `violet-*` our SECONDARY (gold).
+     Always write sky-/violet- utilities for brand colour so a re-brand is one place. */
+  --color-sky-50: #effaf8;
+  --color-sky-300: #8fd3c9;
+  --color-sky-400: #4fb3a6;
+  --color-sky-500: #14908a;
+  --color-sky-600: #0f766e;
+  --color-sky-700: #0b5c56;
+  --color-sky-950: #062f2c;
+  --color-violet-50: #f9f4e7;
+  --color-violet-300: #e3cb96;
+  --color-violet-400: #d4b26c;
+  --color-violet-500: #c29a4b;
+  --color-violet-600: #a57f35;
+  --color-violet-700: #85662a;
+  --color-violet-950: #43350f;
+}
+
+.dark {
+  --app-bg: #0b0b0f;
+  --app-surface: #16161c;
+  --app-border: rgba(255, 255, 255, 0.08);
+}
+
+@theme inline {
+  --font-sans: var(--font-inter), var(--font-cairo), ui-sans-serif, system-ui, sans-serif;
+  --color-app-bg: var(--app-bg);
+  --color-app-surface: var(--app-surface);
+  --color-app-border: var(--app-border);
+  --color-app-primary: var(--accent);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--app-bg);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+/* Arabic gets Boutros Jazirah first, Cairo fallback */
+html[lang="ar"] body,
+[dir="rtl"] body {
+  font-family: "Boutros Jazirah Text", var(--font-cairo), var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+}
+
+/* Slim, unobtrusive scrollbars */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(127, 127, 127, 0.35) transparent;
+}
+*::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+*::-webkit-scrollbar-thumb {
+  background: rgba(127, 127, 127, 0.35);
+  border-radius: 9999px;
+}
+*::-webkit-scrollbar-track {
+  background: transparent;
+}
+/* The global rule above is unlayered and would defeat HeroUI's opt-in
+   hidden scrollbars (e.g. the tab-bar scroller); restore that intent. */
+.scroll-shadow--hide-scrollbar,
+.no-scrollbar {
+  scrollbar-width: none;
+}
+.scroll-shadow--hide-scrollbar::-webkit-scrollbar,
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+/* HeroUI overlays animate enter/exit with keyframes, but their `duration-*`
+   utilities also set transition-duration on the default `transition-property:
+   all`. A stray CSS transition while exiting can be cancelled; React Aria waits
+   on every running animation and never recovers from a cancelled one, leaving an
+   invisible backdrop that blocks the page ("the modal won't close").
+   Keyframes alone drive these overlays. */
+:is(.modal__backdrop, .modal__container, .alert-dialog__backdrop, .alert-dialog__container, .drawer__backdrop,
+  .popover, .tooltip, .dropdown__popover, .select__popover, .combo-box__popover, .autocomplete__popover,
+  .date-picker__popover, .date-range-picker__popover, .color-picker__popover):is([data-entering="true"], [data-exiting="true"]) {
+  transition-property: none;
+}
+
+/* Tab bars: labels never wrap; when space runs out the list overflows into
+   HeroUI's built-in horizontal scroller instead of squeezing tabs onto two lines. */
+[data-slot="tabs-list-container"].max-w-\[fit-content\] {
+  width: fit-content;
+  max-width: 100%;
+}
+[data-slot="tabs-list"] {
+  flex-wrap: nowrap;
+}
+[data-slot="tabs-tab"] {
+  flex-shrink: 0;
+  white-space: nowrap;
+}
+
+/* Selectable chips (filters, toggles) use variant="primary" for the selected
+   state. Give default-colour primary chips the solid accent fill so the
+   selection is obvious. */
+.chip.chip--primary:not(.chip--accent):not(.chip--success):not(.chip--warning):not(.chip--danger) {
+  --chip-bg: var(--accent);
+  --chip-fg: var(--accent-foreground);
+  box-shadow: 0 1px 2px rgb(0 0 0 / 0.12);
+}
+/* Clickable chips get hover / press feedback. */
+.chip.cursor-pointer {
+  transition: background-color 150ms, filter 150ms, transform 100ms;
+  user-select: none;
+}
+.chip.cursor-pointer:hover {
+  filter: brightness(0.95);
+}
+.dark .chip.cursor-pointer:hover {
+  filter: brightness(1.15);
+}
+.chip.cursor-pointer:active {
+  transform: scale(0.97);
+}
+
+/* Safe-area padding for the mobile bottom tab bar */
+.pb-safe {
+  padding-bottom: env(safe-area-inset-bottom);
+}
+
+/* iOS zooms into any field under 16px on focus and stays zoomed, leaving the
+   page wider than the screen. -webkit-touch-callout only exists on iOS WebKit. */
+@supports (-webkit-touch-callout: none) {
+  input:not([type="checkbox"]):not([type="radio"]):not([type="range"]):not([type="color"]):not([type="file"]),
+  textarea,
+  select {
+    font-size: max(16px, 1em);
+  }
+}
+
+/* Responsive grids written as "grid sm:grid-cols-2" have no column template on
+   phones, so the implicit auto column grows to its content and pushes the page
+   wider than the screen. Let it shrink instead. */
+@layer base {
+  .grid {
+    grid-auto-columns: minmax(0, 1fr);
+  }
+}
+
+/* ===== Entrance animation (no-op under prefers-reduced-motion) ===== */
+@media (prefers-reduced-motion: no-preference) {
+  .anim-fade-up {
+    opacity: 0;
+    translate: 0 18px;
+    animation: fade-up 0.8s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+  }
+  .anim-delay-1 { animation-delay: 0.1s; }
+  .anim-delay-2 { animation-delay: 0.22s; }
+  .anim-delay-3 { animation-delay: 0.34s; }
+}
+@keyframes fade-up {
+  to {
+    opacity: 1;
+    translate: 0 0;
+  }
+}
+
+/* usePersistedTab: no indicator animation while the tab is restored from the URL. */
+[data-tab-restoring] .tabs__indicator {
+  transition: none !important;
+}

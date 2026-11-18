@@ -1,0 +1,596 @@
+{
+  "recurrence": {
+    "freq": "Repeats",
+    "freqs": {
+      "daily": "Daily",
+      "weekly": "Weekly",
+      "monthly": "Monthly",
+      "quarterly": "Quarterly",
+      "yearly": "Yearly"
+    },
+    "interval": "Every N {{unit}}",
+    "units": {
+      "daily": "day(s)",
+      "weekly": "week(s)",
+      "monthly": "month(s)",
+      "quarterly": "quarter(s)",
+      "yearly": "year(s)"
+    },
+    "unitsPlural": {
+      "daily": "days",
+      "weekly": "weeks",
+      "monthly": "months",
+      "quarterly": "quarters",
+      "yearly": "years"
+    },
+    "every": {
+      "daily": "Every day",
+      "weekly": "Every week",
+      "monthly": "Every month",
+      "quarterly": "Every quarter",
+      "yearly": "Every year"
+    },
+    "everyN": "Every {{n}} {{unit}}",
+    "onDays": "On days",
+    "weekdays": {
+      "0": "Sun",
+      "1": "Mon",
+      "2": "Tue",
+      "3": "Wed",
+      "4": "Thu",
+      "5": "Fri",
+      "6": "Sat"
+    },
+    "month": "Month",
+    "months": {
+      "1": "January",
+      "2": "February",
+      "3": "March",
+      "4": "April",
+      "5": "May",
+      "6": "June",
+      "7": "July",
+      "8": "August",
+      "9": "September",
+      "10": "October",
+      "11": "November",
+      "12": "December"
+    },
+    "dayOfMonth": "Day of month",
+    "day": "day {{n}}",
+    "until": "Ends on (optional)",
+    "count": "Max occurrences",
+    "unlimited": "Unlimited",
+    "summary": {
+      "daily": "Every {{interval}} day(s)",
+      "weekly": "Every {{interval}} week(s)",
+      "monthly": "Day {{day}} of every {{interval}} month(s)",
+      "quarterly": "Day {{day}} of every quarter",
+      "yearly": "Every year on {{day}}/{{month}}"
+    }
+  },
+  "auth": {
+    "email": "Email",
+    "hidePassword": "Hide password",
+    "invalidCredentials": "Invalid email or password.",
+    "password": "Password",
+    "showPassword": "Show password",
+    "signIn": "Sign in",
+    "signInSubtitle": "Sign in to your {{app}} workspace",
+    "signOut": "Sign out",
+    "signingIn": "Signing in…",
+    "welcomeBack": "Welcome back",
+    "useDemo": "Use demo account"
+  },
+  "availability": {
+    "copyToAll": "Copy to all days",
+    "from": "From",
+    "invalid": "End time must be after the start time.",
+    "off": "Off",
+    "to": "To"
+  },
+  "clients": {
+    "phone": "Phone"
+  },
+  "columns": {
+    "all": "All",
+    "hint": "Choose which columns to show and drag to reorder. Saved to your account, so the same layout follows you on every device.",
+    "moveDown": "Move down",
+    "moveUp": "Move up",
+    "none": "None",
+    "reset": "Reset to default",
+    "selectedCount": "{{count}} of {{total}} shown",
+    "title": "Columns"
+  },
+  "common": {
+    "accountMenu": "Account menu",
+    "actions": "Actions",
+    "addCustom": "Add \"{{value}}\"",
+    "all": "All",
+    "appName": "{{app}}",
+    "attention": {
+      "allClear": "All clear — nothing needs attention",
+      "title": "Needs attention"
+    },
+    "cancel": "Cancel",
+    "clear": "Clear",
+    "close": "Close",
+    "create": "Create",
+    "delete": "Delete",
+    "deleted": "Deleted",
+    "done": "Done",
+    "edit": "Edit",
+    "featureDisabled": "This feature is not included in your current plan.",
+    "language": "Language",
+    "noResults": "No results",
+    "remove": "Remove",
+    "save": "Save",
+    "saved": "Saved",
+    "search": "Search",
+    "searchOrType": "Search or type…",
+    "select": "Select",
+    "selectAll": "Select all",
+    "selectedCount": "{{count}} selected",
+    "soon": "Soon",
+    "sortBy": "Sort by",
+    "status": "Status",
+    "toggleTheme": "Toggle theme",
+    "typeToAdd": "Type above to add a new entry",
+    "typeToSearch": "Type to search…",
+    "appTagline": "Business suite",
+    "previousPage": "Previous page",
+    "nextPage": "Next page",
+    "comingSoon": "Coming soon",
+    "comingSoonHint": "This module is on the roadmap. Placeholder pages use the same header and empty state as the rest of the app.",
+    "noData": "No data yet",
+    "noMatches": "No matches",
+    "noMatchesHint": "Try a different search or clear the filters.",
+    "clearSelection": "Clear selection"
+  },
+  "dashboard": {
+    "attention": {
+      "clearHint": "Nothing is waiting on you right now.",
+      "clearTitle": "You're all caught up",
+      "hint": "Red is waiting on you; amber is a queue you can approve.",
+      "queue": "To approve",
+      "title": "Needs your attention",
+      "yours": "Yours",
+      "rows": {
+        "followUp": "Leads to follow up",
+        "overdue": "Overdue balances",
+        "approve": "Projects awaiting approval"
+      }
+    },
+    "greeting": {
+      "morning": "Good morning",
+      "afternoon": "Good afternoon",
+      "evening": "Good evening"
+    },
+    "hero": {
+      "trend": "+{{pct}}% this month",
+      "activeCustomers": "Active customers",
+      "openProjects": "Open projects",
+      "revenue": "Revenue",
+      "newLeads": "New leads"
+    },
+    "blocks": {
+      "heading": "Your areas",
+      "customersHint": "Accounts and leads",
+      "projectsHint": "Delivery pipeline",
+      "finance": "Finance",
+      "financeHint": "Balances and collections",
+      "reportsHint": "Insights and exports",
+      "overdue": "Overdue",
+      "progress": "{{done}} / {{total}} done",
+      "balances": "Total balances",
+      "owed": "Owed to us"
+    },
+    "upcoming": {
+      "title": "Upcoming deadlines",
+      "all": "All projects"
+    },
+    "quickActions": "Quick actions"
+  },
+  "filters": {
+    "activeCount": "{{count}} active",
+    "clearAll": "Clear all",
+    "more": "More options",
+    "presets": {
+      "changeFirst": "Change a filter first to save a preset.",
+      "default": "Default",
+      "empty": "No saved presets yet",
+      "hint": "Save the current filters to reuse them later. The default preset is applied whenever you open this page.",
+      "makeDefault": "Apply by default when opening this page",
+      "name": "Preset name",
+      "namePlaceholder": "e.g. Vacant studios",
+      "rename": "Rename",
+      "saveCurrent": "Save current filters as preset",
+      "saved": "Preset saved",
+      "setDefault": "Make default",
+      "title": "Presets",
+      "unsetDefault": "Remove default",
+      "updateWithCurrent": "Update preset with current filters"
+    },
+    "reset": "Reset filters",
+    "showResults": "Show results",
+    "title": "Filters"
+  },
+  "locationSets": {
+    "import": {
+      "chooseFile": "Choose file",
+      "fileHint": "PDF, Word or image up to 20 MB",
+      "invalidFile": "Unsupported file type.",
+      "tooLarge": "File is too large."
+    }
+  },
+  "nav": {
+    "collapseSidebar": "Collapse sidebar",
+    "darkMode": "Dark mode",
+    "dashboard": "Dashboard",
+    "expandSidebar": "Expand sidebar",
+    "lightMode": "Light mode",
+    "more": "More",
+    "openMenu": "Open menu",
+    "reports": "Reports",
+    "sections": {
+      "finance": "Finance",
+      "overview": "Overview",
+      "workspace": "Workspace",
+      "system": "Design system"
+    },
+    "settings": "Settings",
+    "customers": "Customers",
+    "projects": "Projects",
+    "invoices": "Invoices",
+    "components": "UI components",
+    "icons": "Icons"
+  },
+  "notifications": {
+    "empty": "You're all caught up.",
+    "markAllRead": "Mark all read",
+    "title": "Notifications",
+    "sample": {
+      "customerTitle": "New customer added",
+      "customerBody": "Sara Al Balushi was added to Customers by Omar.",
+      "paymentTitle": "Payment received",
+      "paymentBody": "OMR 1,250.000 received for invoice INV-1042.",
+      "projectTitle": "Project moved to review",
+      "projectBody": "Sohar Warehouse Fit-out is ready for your review."
+    }
+  },
+  "phone": {
+    "searchCountry": "Search country",
+    "selectCountry": "Select country"
+  },
+  "settings": {
+    "branding": {
+      "logo": "Logo",
+      "upload": "Upload logo",
+      "title": "Branding",
+      "hint": "Logo and colour used across the app.",
+      "color": "Brand colour",
+      "preview": "Live preview"
+    },
+    "pdfSign": {
+      "clear": "Clear",
+      "drawHint": "Sign inside the box using your mouse or finger.",
+      "drawTitle": "Draw signature",
+      "inkColor": "Ink colour",
+      "save": "Save signature"
+    },
+    "subtitle": "Profile, organisation, branding and notifications",
+    "title": "Settings",
+    "profile": {
+      "title": "Your profile",
+      "hint": "How you appear to your team.",
+      "name": "Full name",
+      "bio": "About you",
+      "bioHint": "A short line about your role"
+    },
+    "org": {
+      "title": "Organisation",
+      "hint": "Used on documents, invoices and emails.",
+      "name": "Company name",
+      "country": "Country",
+      "currency": "Currency",
+      "timezone": "Time zone"
+    },
+    "notify": {
+      "title": "Notifications",
+      "hint": "Choose how we reach you.",
+      "email": "Email",
+      "emailHint": "Updates about customers and projects.",
+      "whatsapp": "WhatsApp",
+      "whatsappHint": "Urgent alerts only.",
+      "digest": "Weekly digest",
+      "digestHint": "A summary every Sunday morning."
+    }
+  },
+  "timezones": {
+    "localNow": "Local time there now: {{time}}",
+    "placeholder": "Choose a time zone",
+    "sameAsSchool": "Same as the organisation — {{zone}}",
+    "search": "Search city, country or GMT offset"
+  },
+  "upload": {
+    "dropHint": "or click to browse",
+    "dropTitle": "Drop files here",
+    "errorForbidden": "You don't have permission to upload this kind of file.",
+    "errorGeneric": "Upload failed.",
+    "errorLimit": "Storage limit reached.",
+    "errorMalicious": "The file was rejected by the virus scanner.",
+    "errorScanUnavailable": "Virus scanner unavailable. Try again later.",
+    "errorTooLarge": "File is too large.",
+    "errorType": "This file type isn't allowed here.",
+    "filesCount": "{{count}} files",
+    "remove": "Remove",
+    "upload": "Upload"
+  },
+  "viewer": {
+    "close": "Close",
+    "download": "Download",
+    "next": "Next",
+    "openTab": "Open in new tab",
+    "previous": "Previous",
+    "zoomIn": "Zoom in",
+    "zoomOut": "Zoom out"
+  },
+  "roles": {
+    "admin": "Administrator",
+    "member": "Team member"
+  },
+  "customers": {
+    "title": "Customers",
+    "subtitle": "{{count}} customers",
+    "add": "Add customer",
+    "edit": "Edit customer",
+    "search": "Search by name, email or phone",
+    "allStatuses": "All statuses",
+    "allCities": "All cities",
+    "vip": "VIP",
+    "vipHint": "VIP customers get priority support and are marked with a crown.",
+    "empty": "No customers yet",
+    "emptyHint": "Add your first customer to get started.",
+    "deleteTitle": "Delete customer?",
+    "deleteHint": "{{name}} will be removed. This cannot be undone.",
+    "bulkDeleted_one": "{{count}} customer deleted",
+    "bulkDeleted_other": "{{count}} customers deleted",
+    "formInvalid": "Enter a name (2+ characters) and a valid email.",
+    "status": {
+      "active": "Active",
+      "lead": "Lead",
+      "inactive": "Inactive"
+    },
+    "sort": {
+      "name": "Name",
+      "newest": "Newest",
+      "balance": "Balance"
+    },
+    "fields": {
+      "name": "Name",
+      "contact": "Contact",
+      "city": "City",
+      "joined": "Joined",
+      "balance": "Balance",
+      "nameEn": "Name (English)",
+      "nameAr": "Name (Arabic)",
+      "email": "Email",
+      "phone": "Phone"
+    },
+    "cities": {
+      "muscat": "Muscat",
+      "sohar": "Sohar",
+      "nizwa": "Nizwa",
+      "salalah": "Salalah",
+      "sur": "Sur"
+    }
+  },
+  "projects": {
+    "title": "Projects",
+    "subtitle": "Track delivery from planning to handover",
+    "add": "New project",
+    "created": "Project created",
+    "emptyStage": "Nothing here yet",
+    "formInvalid": "Name, customer and due date are required.",
+    "tabs": {
+      "board": "Board",
+      "list": "List",
+      "activity": "Activity"
+    },
+    "stage": {
+      "planning": "Planning",
+      "active": "In progress",
+      "review": "In review",
+      "done": "Done"
+    },
+    "fields": {
+      "name": "Project name",
+      "customer": "Customer",
+      "progress": "Progress",
+      "due": "Due date",
+      "budget": "Budget",
+      "stage": "Stage",
+      "tags": "Tags",
+      "color": "Colour"
+    },
+    "form": {
+      "basics": "Basics",
+      "basicsHint": "Who the project is for and when it is due.",
+      "organise": "Organise"
+    },
+    "feed": {
+      "actor": "Omar",
+      "completed": "completed",
+      "commented": "commented on",
+      "uploaded": "uploaded drawings to",
+      "moved": "requested a review of"
+    }
+  },
+  "icons": {
+    "title": "Icons",
+    "subtitle": "{{count}} lucide-react icons · click any icon to copy its JSX",
+    "search": "Search icons (e.g. user, file, chart)",
+    "results_one": "{{count}} icon",
+    "results_other": "{{count}} icons",
+    "showMore": "Show more ({{count}} left)",
+    "copied": "Copied <{{name}} />",
+    "noMatchesHint": "Try a simpler word: lucide names are in English (e.g. \"calendar\", \"wallet\").",
+    "usage": "Sizes",
+    "rtl": "Right-to-left",
+    "rtlHint": "Directional icons (chevrons, arrows) get rtl:rotate-180 so they point the right way in Arabic."
+  },
+  "showcase": {
+    "title": "UI components",
+    "subtitle": "The shared building blocks, live. Switch theme or language to see every state.",
+    "toc": "On this page",
+    "docsHint": "Rules for using these live in DESIGN_SYSTEM.md at the project root.",
+    "showCode": "Code",
+    "hideCode": "Hide code",
+    "copy": "Copy code",
+    "copied": "Copied to clipboard",
+    "sections": {
+      "foundations": "Foundations",
+      "actions": "Actions & display",
+      "forms": "Form controls",
+      "data": "Data & lists",
+      "overlays": "Overlays & feedback",
+      "layout": "Page patterns"
+    },
+    "hints": {
+      "foundations": "Colour tokens, tints, type scale, radius and elevation.",
+      "actions": "Buttons, chips, badges, avatars and menus.",
+      "forms": "Every input wrapper. Values are plain strings; labels always come from t().",
+      "data": "Tables that turn into cards on narrow screens, filters, money and pagination.",
+      "overlays": "Modals, confirmations, drawers, toasts, alerts and loading states.",
+      "layout": "Page header, empty state, form sections and the dashboard blocks."
+    },
+    "ex": {
+      "brand": "Brand scales",
+      "primaryScale": "Primary · sky-* (teal)",
+      "secondaryScale": "Secondary · violet-* (gold)",
+      "surfaces": "Surface tokens",
+      "status": "Status colours",
+      "tints": "Icon tints (TINT)",
+      "type": "Type scale",
+      "shape": "Radius & elevation",
+      "buttons": "Button",
+      "linkButton": "LinkButton",
+      "toggleGroup": "ToggleButtonGroup",
+      "chips": "Chip",
+      "badges": "Badge · Kbd",
+      "avatars": "UserAvatar",
+      "menus": "Tooltip · Dropdown · Popover",
+      "textInputs": "Text inputs",
+      "selects": "Selects & pickers",
+      "dates": "Dates & times",
+      "toggles": "Switch · Checkbox · Radio · Slider",
+      "colors": "Colour pickers",
+      "recurrence": "RecurrenceField",
+      "availability": "AvailabilityEditor",
+      "files": "FileUpload · FileCard",
+      "aiFile": "AiFilePicker",
+      "code": "CodeEditor",
+      "dataTable": "DataTable",
+      "recordCards": "RecordCard",
+      "filters": "Filters",
+      "attention": "NeedsAttentionBar · GapBadges",
+      "money": "Money · CurrencySymbol",
+      "pagination": "ListPagination",
+      "dialogs": "Dialogs",
+      "toasts": "Toasts",
+      "alerts": "Alert",
+      "loading": "Loading states",
+      "dashboardBlocks": "Dashboard blocks"
+    },
+    "type": {
+      "h1": "Page title",
+      "h2": "Section title",
+      "h3": "Card title",
+      "body": "Body text",
+      "muted": "Hint / secondary text",
+      "overline": "Overline label"
+    },
+    "gaps": {
+      "noPhone": "No phone",
+      "noEmail": "No email",
+      "overdue": "Overdue"
+    },
+    "alerts": {
+      "defaultTitle": "Heads up",
+      "defaultBody": "Neutral information about this page.",
+      "accentTitle": "New feature",
+      "accentBody": "Projects now support custom colours.",
+      "successTitle": "All set",
+      "successBody": "Your changes were saved.",
+      "warningTitle": "Check this",
+      "warningBody": "Two customers have no phone number.",
+      "dangerTitle": "Something went wrong",
+      "dangerBody": "We couldn't reach the server. Try again."
+    },
+    "demo": {
+      "small": "Small",
+      "medium": "Medium",
+      "large": "Large",
+      "create": "Create",
+      "continue": "Continue",
+      "share": "Share",
+      "clickToLoad": "Click to load",
+      "disabled": "Disabled",
+      "alignStart": "Align start",
+      "alignCenter": "Align centre",
+      "alignEnd": "Align end",
+      "hoverMe": "Hover me",
+      "tooltip": "Tooltips label icon-only buttons",
+      "duplicate": "Duplicate",
+      "download": "Download",
+      "popover": "Popover",
+      "popoverTitle": "Popovers hold small panels",
+      "popoverBody": "Use them for quick details or a short form. Anything bigger belongs in a Modal.",
+      "fullName": "Full name",
+      "fullNameHint": "e.g. Sara Al Balushi",
+      "fieldDescription": "Descriptions sit under the input.",
+      "invalidEmail": "Enter a valid email address.",
+      "quantity": "Quantity",
+      "notes": "Notes",
+      "notesHint": "Anything the team should know",
+      "otp": "Verification code",
+      "office": "Office",
+      "retail": "Retail",
+      "business": "Business",
+      "pickCustomer": "Pick a customer",
+      "switchLabel": "Email alerts",
+      "switchHint": "A daily summary of new activity.",
+      "agree": "I agree to the terms",
+      "volume": "Volume",
+      "plan": "Billing cycle",
+      "monthly": "Monthly",
+      "quarterly": "Quarterly",
+      "yearly": "Yearly",
+      "upload": "Upload files",
+      "tableNote": "Resize the window: below the breakpoint the same rows render as cards.",
+      "fullExample": "See the full list page",
+      "allCustomers": "All customers",
+      "modalTitle": "Edit details",
+      "modalBody": "Modals are not dismissable by clicking outside, so unsaved input is never lost. Close with Cancel, Save or the X.",
+      "confirmBody": "This permanently removes the record. Confirmations always name what will be lost.",
+      "drawerTitle": "Details",
+      "drawerBody": "Drawers slide in from the end edge (left in Arabic) for side details that keep the page in view.",
+      "signature": "Signature",
+      "toastError": "Could not save. Try again.",
+      "toastWarning": "Saved, but 2 rows were skipped.",
+      "toastInfo": "Export started",
+      "toastDescription": "We'll notify you when it's ready.",
+      "cardHint": "Card is the plain surface container.",
+      "introHint": "FormIntro leads a form with an avatar or image.",
+      "registration": "Registration number",
+      "groupLabel": "Group label",
+      "field": "Field",
+      "footerError": "FormFooter shows the error line above the actions.",
+      "heroTitle": "One accent hero per home page",
+      "loadingState": "stats={undefined} shows the skeleton",
+      "eventTitle": "Design review",
+      "eventSub": "Muscat Office Renovation",
+      "eventTitle2": "Handover"
+    }
+  }
+}
